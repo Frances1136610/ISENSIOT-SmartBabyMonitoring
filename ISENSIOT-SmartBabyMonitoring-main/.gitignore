@@ -1,0 +1,15 @@
+venv/
+cred.json
+./Arduino ADC/arduinoAdcSender/.vscode/extensions.json
+Visualization/volumes/
+Visualization/influx.env
+credTest.json
+*.pyc
+*.gcode
+PCB/ISENSIOT-PCB/History/
+PCB/ISENSIOT-PCB/Project Logs for ISENSIOT-PCB/
+PCB/ISENSIOT-PCB/__Previews/Main.SchDocPreview
+PCB/ISENSIOT-PCB/__Previews/Sensors.SchDocPreview
+.vscode/settings.json
+CryClassification/baby_recording.wav
+CryClassification/baby_recording.wav

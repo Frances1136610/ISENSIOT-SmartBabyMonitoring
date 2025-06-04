@@ -1,0 +1,5 @@
+DHT22=Data
+FSR=FSR-1,FSR-2,FSR-3
+I2c=SDA,SCL
+Moisture=Vout
+Power=5V,GND

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "817164833857",
+    "project_id": "isensiot-b9d43",
+    "storage_bucket": "isensiot-b9d43.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817164833857:android:4676115273a1cd9d1722c0",
+        "android_client_info": {
+          "package_name": "com.example.smart_babyfoon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmDXD338mCQ61wDTrt4RmFtfjPBhf5A78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

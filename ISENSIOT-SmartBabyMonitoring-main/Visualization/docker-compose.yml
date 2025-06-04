@@ -1,0 +1,33 @@
+version: "3.8"
+services:
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    restart: unless-stopped
+    user: "0"
+    ports:
+      - '3000:3000'
+    environment:
+      - TZ=Europe/Amsterdam
+      - GF_PATHS_DATA=/var/lib/grafana
+      - GF_PATHS_LOGS=/var/log/grafana
+      - MIN_REFRESH_INTERVAL=
+    volumes:
+      - /home/pi/Documents/DockerVolumes/grafana/data:/var/lib/grafana
+      - /home/pi/Documents/DockerVolumes/grafana/log:/var/log/grafana
+      - /home/pi/Documents/DockerVolumes/grafana/provisioning/:/etc/grafana/provisioning
+      - /home/pi/Documents/DockerVolumes/grafana/grafana.ini:/etc/grafana/grafana.ini
+      # - ./volumes/grafana/data:/var/lib/grafana
+      # - ./volumes/grafana/log:/var/log/grafana
+
+  influxdb:
+    container_name: influxDB
+    image: influxdb:2.6-alpine
+    restart: unless-stopped
+    env_file:
+      - influx.env
+    volumes:
+      # - ./volumes/influxdb/influxdbv2:/var/lib/influxdb2:rw
+      - /home/pi/Documents/DockerVolumes/influxdb/influxdbv2:/var/lib/influxdb2:rw
+    ports:
+      - "8086:8086"
